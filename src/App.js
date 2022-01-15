@@ -60,6 +60,7 @@ function App() {
           </Typography>
         </Toolbar>
       </AppBar> 
+      <p></p>
       <AddTodo addTodo={addTodo}/>  
       <div className="ag-theme-material" style={ { height: 400, width: 700, margin: 'auto' } }>
         <AgGridReact rowData={todos}>
