@@ -19,7 +19,7 @@ function App() {
   },[])
 
   const fetchItems = () => {
-    fetch('https://todolist-81242-default-rtdb.europe-west1.firebasedatabase.app/items/.json')
+    fetch('https://todolist-3f5ce-default-rtdb.europe-west1.firebasedatabase.app/items/.json')
     .then(response => response.json())
     .then(data => addKeys(data))
     .catch(err => console.error(err))
@@ -33,7 +33,7 @@ function App() {
   }
 
   const addTodo = (newTodo) => {
-    fetch('https://todolist-81242-default-rtdb.europe-west1.firebasedatabase.app/items/.json',
+    fetch('https://todolist-3f5ce-default-rtdb.europe-west1.firebasedatabase.app/items/.json',
     {
       method: 'POST',
       body: JSON.stringify(newTodo)
@@ -43,7 +43,7 @@ function App() {
   }
 
   const deleteTodo = (id) => {
-    fetch(`https://todolist-81242-default-rtdb.europe-west1.firebasedatabase.app/items/${id}.json`,
+    fetch(`https://todolist-3f5ce-default-rtdb.europe-west1.firebasedatabase.app/items/${id}.json`,
    {
       method: 'DELETE',
     })
